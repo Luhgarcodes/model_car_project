@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color:grey;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding:10px 10px;
+    animation: head 1s ease-in-out;
+}
+@keyframes head{
+    0%{
+        transform: translate(0,-100%);
+    }
+}
+.header ul li{
+    display: inline-block;
+    padding-right:20px ;
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.content{
+    width:50%;
+    margin-left:5%;
+    margin-top:8%;
+    
+    color: beige;
+    animation: cont 1s ease-in-out;
+}
+@keyframes cont{
+    0%{
+        transform: translate(-100%,0);
+    }
+}
+.content h1{
+    font-size: 60px;
+    letter-spacing:8x;
+    text-shadow: 0 0 8px orangered,0 0 8px yellow;
+}
+.content p{
+    font-weight: 900;
+}
+.content span{
+    color:yellow;
+}
+#button1,#button2 {
+    width:140px;
+    height: 40px;
+    padding:5px;
+    margin-right:5px;
+    background-color: rgb(32, 30, 30);
+    color: aliceblue;
+    border-radius: 8px;
+    box-shadow: -1px -1px 0px white ;
+}
+.giff{
+    width:50%;
+    margin-top:5%;
+    z-index: -1;
+}
+.giff img{
+    width:100%;
+    animation: img 5s ease-in ;/* infinite */
+}
+@keyframes img{
+    0%{transform: translate(100%,0);}
+    100%{transform: translate(-220%,0);}
+}
+@media screen and (max-width:1200px){ 
+    .content{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .giff{ 
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        position: absolute;
+        bottom: 10%;
+        text-align: center;
+    }
+    #giff{
+        width: 30rem;
+    }
+}
+@media screen and (max-width:1200px){ 
+    .content{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .giff{ 
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        position: absolute;
+        bottom: 10%;
+        text-align: center;
+    }
+    #giff{
+        width: 30rem;
+    }
+}
+@media screen and (max-width:576px){ 
+    .content{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .giff{ 
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        position: absolute;
+        bottom: 10%;
+        text-align: center;
+    }
+    #giff{
+        width: 20rem;
+    }
+}
